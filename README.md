@@ -4,21 +4,23 @@
 ```!
 nmap -sS -A -F -Pn <Target_IP>
 ```
-![image](https://hackmd.io/_uploads/ryHTmENnGx.png)
+<img width="836" height="676" alt="image" src="https://github.com/user-attachments/assets/4a154ea9-ae60-4a27-b79d-a0f5c4549299" />
 
 ```!
 sudo tee -a /etc/hosts <<EOF
 10.129.245.100     connected.htb 
 EOF
 ```
-![image](https://hackmd.io/_uploads/SyfXUN42fx.png)
+<img width="426" height="256" alt="image" src="https://github.com/user-attachments/assets/0c043124-e970-4368-b429-3e25088e0a3f" />
 
-![image](https://hackmd.io/_uploads/ryv5sNV2Gg.png)
+<img width="1711" height="824" alt="image" src="https://github.com/user-attachments/assets/8a9a8b3d-f7f4-4ddc-9e8b-a03780a1660e" />
 
 #### freePBX 是 Asterisk（電話總機系統）的網頁管理系統
 漏洞介紹：https://www.sentinelone.com/vulnerability-database/cve-2025-57819/#cq=i1
-![image](https://hackmd.io/_uploads/H1pCh442Ml.png)
-![image](https://hackmd.io/_uploads/H19lpV4hzx.png)
+<img width="1061" height="361" alt="image" src="https://github.com/user-attachments/assets/ee9331e7-3ba7-4c3d-8827-b1943e308dda" />
+
+![Uploading image.png…]()
+
 ![image](https://hackmd.io/_uploads/SJRi2NV2fx.png)
 
 #### 這個漏洞存在於 FreePBX 電話總機網頁管理系統中，漏洞利用其 Endpoint 模組的 brand 進行 SQL 注入漏洞，繞過身分驗證直接侵入後端資料庫，在原本用於「執行系統更新與定時備份等日常維護」的 cron_jobs 排程表中，寫入惡意指令的排程
